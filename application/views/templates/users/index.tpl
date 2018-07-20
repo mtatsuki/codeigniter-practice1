@@ -6,6 +6,7 @@
             <th>ユーザID</th>
             <th>ユーザ名</th>
             <th>Eメール</th>
+            <th>ひとこと</th>
         </tr>
     </thead>
     <tbody>
@@ -14,6 +15,7 @@
             <td>{$user->id}</td>
             <td>{$user->name}</td>
             <td>{$user->email}</td>
+            <td>{$user->msg}</td>
         </tr>
     </tbody>
 {/foreach}

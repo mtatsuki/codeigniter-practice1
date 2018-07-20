@@ -4,6 +4,7 @@ class User_model extends CI_Model {
 	public $id;
 	public $name;
 	public $email;
+    public $msg;
 
 	public function __construct()
 	{
@@ -29,11 +30,12 @@ class User_model extends CI_Model {
 	}
 
 	// ユーザを作成するメソッド
-	public function create_user($name, $email) {
+	public function create_user($name, $email, $msg) {
 		// TODO: ユーザをuserテーブルに追加する
 		$user = new User_model;
         $user->name = $name;
         $user->email = $email;
+        $user->msg = $msg;
         
         return $this->db->insert('user', $user);
 	}

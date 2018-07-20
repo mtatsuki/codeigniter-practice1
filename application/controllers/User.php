@@ -27,8 +27,9 @@ class User extends CI_Controller {
 	{
 		$name = $this->input->post('name');
 		$email = $this->input->post('email');
+		$msg = $this->input->post('msg');
 
-		$this->user->create_user($name, $email);
+		$this->user->create_user($name, $email,$msg);
 		redirect('/user/index');
 	}
 

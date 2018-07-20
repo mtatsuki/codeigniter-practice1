@@ -18,14 +18,18 @@
             <th>ユーザID</th>
             <th>ユーザ名</th>
             <th>Eメール</th>
+            <th>性別</th>
         </tr>
     </thead>
     <tbody>
+    {foreach from=$users item=user}
         <tr>
-            <td>1</td>
-            <td>yuemori</td>
-            <td>yuemori@aiming-inc.com</td>
+            <td>{$user->id}</td>
+            <td>{$user->name}</td>
+            <td>{$user->email}</td>
+            <td>{$user->gender}</td>
         </tr>
     </tbody>
+    {/foreach}
 </table>
 {/if}

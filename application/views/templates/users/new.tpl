@@ -9,6 +9,10 @@
     <label for="email">メールアドレス</label>
     <input type="email" class="form-control" id="email" name="email" placeholder="メールアドレス" value="">
   </div>
+  <div class="form-group">
+    <label for="msg">ひとこと</label>
+    <input type="text" class="form-control" id="msg" name="msg" placeholder="ひとことメッセージ" value="">
+  </div>
 
   <button type="submit" class="btn btn-success" value="submit">登録</button>
 </form>

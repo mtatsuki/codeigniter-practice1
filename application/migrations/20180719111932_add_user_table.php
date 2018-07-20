@@ -22,6 +22,10 @@ class Migration_Add_user_table extends CI_Migration {
                                 'type' => 'VARCHAR',
                                 'constraint' => '100',
                         ),
+                        'msg' => array(
+                                'type' => 'VARCHAR',
+                                'constraint' => '20',
+                        ),
                 ));
 
 		// プライマリキーの指定
